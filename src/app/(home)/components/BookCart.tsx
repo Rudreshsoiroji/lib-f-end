@@ -1,8 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { Book } from '@/Types'
 
-function BookCart() {
+function BookCart({ book }: { book: Book }) {
   return (
     <div className="flex gap-5 border p-5 shadow-md rounded">
     <Image
